@@ -6,17 +6,22 @@ using System.Threading.Tasks;
 
 namespace ATM
 {
-    class Account
+    class MyAccount
     {
         String PIN;
         int balance;
         String lastTransaction;
-
-        public Account(String pin, int b)
+        private char p1;
+        private int p2;
+        
+        public MyAccount(string pin, int b)
         {
             PIN = pin;
             balance = b;
         }
+
+       
+       
         public Boolean verifyPin(String pin)
         {
             if (PIN.ToLower().Equals(pin.ToLower()))
@@ -42,6 +47,7 @@ namespace ATM
 
             
             balance -= amount;
+           
 
             return true;
             

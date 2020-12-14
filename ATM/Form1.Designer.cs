@@ -52,6 +52,20 @@
             txtInput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
+            // txtInput
+            // 
+            txtInput.Anchor = System.Windows.Forms.AnchorStyles.None;
+            txtInput.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            txtInput.ForeColor = System.Drawing.SystemColors.Window;
+            txtInput.Location = new System.Drawing.Point(248, 44);
+            txtInput.MaximumSize = new System.Drawing.Size(500, 500);
+            txtInput.Multiline = true;
+            txtInput.Name = "txtInput";
+            txtInput.Size = new System.Drawing.Size(375, 300);
+            txtInput.TabIndex = 25;
+            txtInput.Text = "Enter Pin to Start";
+            txtInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // cmdBalance
             // 
             this.cmdBalance.Location = new System.Drawing.Point(58, 52);
@@ -78,6 +92,7 @@
             this.cmdConfirm.TabIndex = 2;
             this.cmdConfirm.Text = "Confirm";
             this.cmdConfirm.UseVisualStyleBackColor = true;
+            this.cmdConfirm.Click += new System.EventHandler(this.cmdConfirm_Click);
             // 
             // cmdReceipt
             // 
@@ -87,6 +102,7 @@
             this.cmdReceipt.TabIndex = 3;
             this.cmdReceipt.Text = "Withdraw with Reciept";
             this.cmdReceipt.UseVisualStyleBackColor = true;
+            this.cmdReceipt.Click += new System.EventHandler(this.cmdReceipt_Click);
             // 
             // cmdWithdraw
             // 
@@ -96,6 +112,7 @@
             this.cmdWithdraw.TabIndex = 4;
             this.cmdWithdraw.Text = "Withdraw";
             this.cmdWithdraw.UseVisualStyleBackColor = true;
+            this.cmdWithdraw.Click += new System.EventHandler(this.cmdWithdraw_Click);
             // 
             // cmd7
             // 
@@ -236,27 +253,13 @@
             // lblmainoutput
             // 
             this.lblmainoutput.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblmainoutput.Location = new System.Drawing.Point(649, 47);
-            this.lblmainoutput.MaximumSize = new System.Drawing.Size(200, 50);
+            this.lblmainoutput.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblmainoutput.Location = new System.Drawing.Point(629, 47);
+            this.lblmainoutput.MaximumSize = new System.Drawing.Size(300, 50);
             this.lblmainoutput.Name = "lblmainoutput";
-            this.lblmainoutput.Size = new System.Drawing.Size(154, 24);
+            this.lblmainoutput.Size = new System.Drawing.Size(252, 24);
             this.lblmainoutput.TabIndex = 24;
             this.lblmainoutput.Text = "label3";
-            this.lblmainoutput.Click += new System.EventHandler(this.lblmainoutput_Click);
-            // 
-            // txtInput
-            // 
-            txtInput.Anchor = System.Windows.Forms.AnchorStyles.None;
-            txtInput.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            txtInput.ForeColor = System.Drawing.SystemColors.Window;
-            txtInput.Location = new System.Drawing.Point(248, 44);
-            txtInput.MaximumSize = new System.Drawing.Size(500, 500);
-            txtInput.Multiline = true;
-            txtInput.Name = "txtInput";
-            txtInput.Size = new System.Drawing.Size(375, 300);
-            txtInput.TabIndex = 25;
-            txtInput.Text = "Enter Pin to Start";
-            txtInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cashMachine
             // 
